@@ -1,10 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
+
+  //logica
+  const myFunction = ()=>{}
+
+  const stylesP = {
+    border: 'solid 2px blue',
+    padding: '20px',
+  }
+
   return (
-    <h1>hola mundooooooo </h1>
-  );
+    <>
+    <NavBar></NavBar>
+    <ItemListContainer greeting={'Elemental, Watson'}></ItemListContainer>
+
+    </>);
+  
 }
 
 export default App;
