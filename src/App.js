@@ -1,7 +1,12 @@
 import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import Item from './components/Item';
+import ItemList from './components/ItemList';
+import ItemDetail from './components/ItemDetail';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
 
@@ -15,9 +20,19 @@ function App() {
 
   return (
     <>
-    <NavBar></NavBar>
-    <ItemListContainer greeting={'Elemental, Watson'}></ItemListContainer>
+    <BrowserRouter>
 
+      <NavBar></NavBar>
+
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>} />
+        <Route path='/mujer' element={<ItemListContainer/>} />
+        <Route path='/hombre' element={<ItemListContainer/>} />
+        <Route path='/category/:id' element={<ItemListContainer/>} />
+        <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
+      </Routes>
+
+    </BrowserRouter>
     </>);
   
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -25,23 +26,23 @@ const NavBar = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost normal-case text-xl">Sherlock Manic</a>
+    <Link to='/' class="btn rounded-full">Sherlock Manic</Link>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-      <li><a>Pipas</a></li>
+      <li><Link to='/pipas'>Pipas</Link></li>
       <li tabindex="0">
         <a>
           Ropa
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul class="p-2">
-          <li><a>Mujer</a></li>
-          <li><a>Hombre 2</a></li>
+          <li><Link to='/mujer'>Mujer</Link></li>
+          <li><Link to='/hombre'>Hombre</Link></li>
         </ul>
       </li>
-      <li><a>Whiskeys</a></li>
-      <li><a>Accesorios</a></li>
+      <li><Link to='/whisky'>Whiskys</Link></li>
+      <li><Link to='/accesorios'>Accesorios</Link></li>
     </ul>
   </div>
   <div class="navbar-end">
