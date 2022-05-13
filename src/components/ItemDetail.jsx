@@ -9,6 +9,14 @@ const ItemDetail = ({
     descripcion,
     price,
   }) => {
+    console.log("props", {
+      id,
+      name,
+      category,
+      img,
+      descripcion,
+      price,
+    })
   return (
     <div className="detail-row">
     <img src={img} alt={`${id}-${name}`} className="flex-col" />

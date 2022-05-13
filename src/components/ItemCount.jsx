@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import './styles css/ItemState.css';
 
-const ItemSate = ({ initial, stock, onAddProp }) => {
+
+const ItemCount = ({ initial, stock, onAddProp }) => {
   const [qty, setQty] = useState(initial);
 
   const addProduct = (num) => {
@@ -40,4 +40,4 @@ const ItemSate = ({ initial, stock, onAddProp }) => {
   );
 };
 
-export default ItemSate;
+export default ItemCount;

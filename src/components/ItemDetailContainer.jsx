@@ -6,16 +6,13 @@ import { useParams } from 'react-router-dom'
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
-  
     const { itemId } = useParams();
   
-   
     useEffect(() => {
       setLoading(true);
       const getItems = new Promise((resolve) => {
         setTimeout(() => {
-          const myData = data.find((item) => item.id === itemId);
-  
+          const myData = data.find((item) => item.id == itemId);
           resolve(myData);
         }, 1000);
       });

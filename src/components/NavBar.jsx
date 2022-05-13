@@ -30,19 +30,19 @@ const NavBar = () => {
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-      <li><Link to='/pipas'>Pipas</Link></li>
+      <li><Link to='/category/pipas'>Pipas</Link></li>
       <li tabindex="0">
         <a>
           Ropa
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul class="p-2">
-          <li><Link to='/mujer'>Mujer</Link></li>
-          <li><Link to='/hombre'>Hombre</Link></li>
+          <li><Link to='/category/mujer'>Mujer</Link></li>
+          <li><Link to='/category/hombre'>Hombre</Link></li>
         </ul>
       </li>
-      <li><Link to='/whisky'>Whiskys</Link></li>
-      <li><Link to='/accesorios'>Accesorios</Link></li>
+      <li><Link to='/category/whisky'>Whiskys</Link></li>
+      <li><Link to='/category/accesorios'>Accesorios</Link></li>
     </ul>
   </div>
   <div class="navbar-end">
